@@ -14,6 +14,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && electron-builder",
+    "pack:win": "electron-builder --windows",
     "preview": "vite preview",
     "pree2e": "vite build --mode=test",
     "e2e": "playwright test"
@@ -37,6 +38,6 @@
     "vite-plugin-electron-renderer": "^0.14.5"
   },
   "engines": {
-    "node": "^14.18.0 || >=16.0.0"
+    "node": "18.16.1"
   }
 }
