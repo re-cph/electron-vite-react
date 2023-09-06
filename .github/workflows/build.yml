@@ -20,7 +20,7 @@ jobs:
         cache: "yarn"
 
     - name: Install dependencies
-      run: yarn install --network-timeout 1000000000
+      run: yarn install --frozen-lockfile --network-timeout 1000000000
 
     - name: Build Electron App
       run: yarn build
