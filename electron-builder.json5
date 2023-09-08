@@ -2,7 +2,7 @@
  * @see https://www.electron.build/configuration/configuration
  */
 {
-  "appId": null,
+  "appId": "com.recph.replan",
   "asar": true,
   "directories": {
     "output": "release/${version}"
@@ -20,14 +20,14 @@
   },
   "win": {
     "target": [
-      // {
-      //   "target": "nsis",
-      //   "arch": [
-      //     "x64"
-      //   ]
-      // },
       {
-        target: "portable",
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      },
+      {
+        target: "zip",
         arch: ["x64"],
       },
     ],
