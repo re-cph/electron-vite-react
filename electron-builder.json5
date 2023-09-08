@@ -2,7 +2,7 @@
  * @see https://www.electron.build/configuration/configuration
  */
 {
-  "appId": "YourAppID",
+  "appId": null,
   "asar": true,
   "directories": {
     "output": "release/${version}"
@@ -20,14 +20,14 @@
   },
   "win": {
     "target": [
+      // {
+      //   "target": "nsis",
+      //   "arch": [
+      //     "x64"
+      //   ]
+      // },
       {
-        "target": "nsis",
-        "arch": [
-          "x64"
-        ]
-      },
-      {
-        target: "zip",
+        target: "portable",
         arch: ["x64"],
       },
     ],
